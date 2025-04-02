@@ -1,14 +1,21 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-
-// import org.junit.jupiter.api.Test;
+import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+    Scanner skan = new Scanner(System.in);
+    String input;
 
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
+    System.out.println("wpisz tekst: ");
+
+    while (true) {
+      input = skan.nextLine();
+      if (input.equals("q")) {
+        break;
+      }
+      System.out.println(input);
+    }
+
+    System.out.println("");
+    skan.close();
+  }
 }
